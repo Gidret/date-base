@@ -88,4 +88,28 @@ let finalTotal = total + delivery;
 console.log("Стоимость доставки:", delivery);
 console.log("Итоговая стоимость заказа:", finalTotal);
 
+let isActive = true;      // Аккаунт активен
+let isBlocked = false;    // Не заблокирован
+let hasErrors = false;    // Форма не содержит ошибок
+
+// Все три условия должны выполняться одновременно
+if (isActive && !isBlocked && !hasErrors) {
+    console.log("Заявка отправлена");
+} else {
+    console.log("Отправка запрещена");
+}
+
+let age = 18;             // Возраст
+let isRegistered = true;  // Зарегистрирован
+let isBlocked = false;    // Не заблокирован
+let role = "student";     // Роль ("student" или "admin")
+let isFinished = false;   // Тестирование ещё не завершено (значит, завершено = false)
+
+// Проверяем все требования
+if (age >= 16 && isRegistered && !isBlocked && (role === "student" || role === "admin") && !isFinished) {
+    console.log("Студент может приступить к тестированию");
+} else {
+    console.log("Доступ к тестированию запрещен");
+}
+
 ```
