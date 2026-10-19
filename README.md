@@ -60,3 +60,18 @@ pip install Pillow
 python main.py
 ```
 При первом запуске программа автоматически создаст локальный файл базы данных (например, `phonebook.db` или аналогичный в зависимости от кода) в папке проекта.
+
+```bash
+let total = 4500;
+let quantity = 4;
+let registered = true;
+
+// Проверяем все условия для получения скидки 15%
+if (total >= 3000 && quantity >= 3 && registered) {
+    let discountedTotal = total * 0.85; // Итоговая цена со скидкой 15%
+    console.log("Стоимость со скидкой:", discountedTotal);
+} else {
+    console.log("Стоимость без скидки:", total);
+}
+
+```
