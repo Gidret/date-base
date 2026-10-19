@@ -74,4 +74,18 @@ if (total >= 3000 && quantity >= 3 && registered) {
     console.log("Стоимость без скидки:", total);
 }
 
+let total = 3200;
+let premium = true;
+let delivery = 400;
+
+// Бесплатная доставка при сумме от 5000 рублей ИЛИ наличии подписки premium
+if (total >= 5000 || premium) {
+    delivery = 0;
+}
+
+let finalTotal = total + delivery;
+
+console.log("Стоимость доставки:", delivery);
+console.log("Итоговая стоимость заказа:", finalTotal);
+
 ```
