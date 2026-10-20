@@ -112,4 +112,10 @@ if (age >= 16 && isRegistered && !isBlocked && (role === "student" || role === "
     console.log("Доступ к тестированию запрещен");
 }
 
+for (let i = 1; i <= 30; i++) {
+  if (i % 3 === 0) {
+    console.log(i);
+  }
+}
+
 ```
